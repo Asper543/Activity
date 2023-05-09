@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activity and Fragments</string>
+    <string name="fragment_1_text">Fragment 1</string>
+    <string name="fragment_2_text"> Fragment 2</string>
+    <string name="activity_text">I am Activity</string>
+    <string name="name_fragment_container_text">Container</string>
+    <string name="button_add">CONTAINER</string>
+    <string name="button_delete">FRAG 1</string>
+    <string name="button_next">FRAG 2</string>
+</resources>
