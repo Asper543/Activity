@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/name_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_contact_text"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/name_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_contact_text"
+            android:layout_weight="1"
+            android:textSize="15dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
