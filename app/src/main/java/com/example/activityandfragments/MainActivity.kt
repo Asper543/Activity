@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.activityandfrugments.R
 
 const val TAG = "First"
+const val  BUTT_COUNT="BUTT_COUNT"
 
 val NAME_COLOR = arrayOf(
     NameColor(name = "yellow", color = R.color.yellow),
