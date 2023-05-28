@@ -3,7 +3,9 @@ package com.example.activityandfragments
 import android.os.Handler
 import android.os.Message
 
-class MyHandler( val collback: Callback) : Handler() {
+
+const val ITEM_ADDED = 1
+class MyHandler(private val callback: Callback) : Handler() {
     private var jobThread: Thread? = null
 
     fun addJob(thread: Thread): MyHandler {
@@ -16,14 +18,15 @@ class MyHandler( val collback: Callback) : Handler() {
     }
 
     override fun handleMessage(msg: Message) {
-        collback.handleMessage(msg)
+        callback.handleMessage(msg)
     }
 
-    fun closedJob():MyHandler {
+    fun closedJob(): MyHandler {
         jobThread?.interrupt()
         jobThread = null
         return this
     }
 
     fun startJob() = jobThread?.start()
+
 }

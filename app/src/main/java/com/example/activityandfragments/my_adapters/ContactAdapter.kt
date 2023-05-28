@@ -23,14 +23,14 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() 
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
         val item = data[position]
         with(holder) {
-            name_text.text = item.name
-            phone_text.text = "Phone:${item.phone}"
+            textView.text = item.name
+            phoneText.text = "Phone:${item.phone}"
         }
     }
 
     class ContactViewHolder(itemView: View) : ViewHolder(itemView) {
-        val name_text: TextView = itemView.findViewById(R.id.name_contact)
-        val phone_text: TextView = itemView.findViewById(R.id.name_phone)
+        val textView: TextView = itemView.findViewById(R.id.name_contact)
+        val phoneText: TextView = itemView.findViewById(R.id.name_phone)
     }
 
     fun setData(dataItem: Contact) {
